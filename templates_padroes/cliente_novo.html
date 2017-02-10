@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+{% block title %}
+
+	Meu titulo
+
+{% endblock %}
+
+
+
+
+{% block main%}
+
+	<form method="Post">
+		{% csrf_token %}
+	
+		{{form|bootstrap}}
+
+		<button type="subimit" class="btn btn-info">Salvar</button>
+	</form>
+
+{% endblock %}

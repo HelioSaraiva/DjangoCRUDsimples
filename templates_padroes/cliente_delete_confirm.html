@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+	Meu titulo
+
+{% endblock %}
+
+
+
+
+{% block main%}
+
+	<form method="POST">
+
+		{% csrf_token %}
+		<p><font color="#000000">Voce tem certeza que deseja deletar {{object}} ?</font></p>
+		<button type="submit" class=" btn btn-danger">tenho certeza</button>
+
+	</form>
+
+{% endblock %}

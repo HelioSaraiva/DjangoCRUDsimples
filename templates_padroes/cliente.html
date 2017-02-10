@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+	Meu titulo
+
+{% endblock %}
+
+
+
+
+{% block main %}
+
+	<h1>Paginas de cliente </h1>
+
+
+	{{ djangomoc }}
+	
+	<br>
+	<ol>
+	 <font color="#000000">
+
+		{% for cliente in lista_clientes %}
+			<font color="#000000">
+			<li><a href="{% url 'cliente_update' cliente.id %}"><font color="#000000">{{cliente}}</font></a></li>
+			</font>
+		{% endfor %}
+
+	 </font>
+	</ol>
+	<br>
+	<a href="{% url 'cliente_create'%}" class=" btn btn-warning">Novo Cliente</a>
+
+{% endblock %}
