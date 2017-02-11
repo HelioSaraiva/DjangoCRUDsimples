@@ -1,1 +1,1 @@
-web: guncorn meusitenovo.wgi --log-file -
+web: guncorn meusitenovo.wgi 
