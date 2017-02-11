@@ -1,5 +1,7 @@
+#!-*- conding: utf8 -*-
 from django.contrib import admin
 from cliente.models import Cliente
+
 
 
 class ClienteAdmin(admin.ModelAdmin):
